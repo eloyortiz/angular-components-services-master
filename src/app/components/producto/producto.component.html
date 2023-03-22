@@ -1,0 +1,6 @@
+<div>
+    <h2>{{ producto.name | uppercase }}</h2>
+    <img [src]="producto.image" width="200px" height="200px">
+    <p>Precio: {{ producto.precio | customCurrency:'USD' }}</p>
+    <button (click)="addToShoppingCart(producto)">Agregar al carrito</button>
+</div>
